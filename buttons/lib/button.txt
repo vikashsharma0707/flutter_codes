@@ -1,0 +1,167 @@
+🚀 Flutter Buttons: Types, Definitions & Uses
+1. ElevatedButton
+Definition:
+A raised button with background color and shadow. It gives a sense of depth.
+
+Use:
+Use it for primary actions in your UI.
+
+dart
+Copy
+Edit
+ElevatedButton(
+  onPressed: () {},
+  child: Text("Click Me"),
+)
+🟢 Example Use Case: Submit, Save, Confirm button.
+
+2. TextButton
+Definition:
+A simple text-only button without any border or background.
+
+Use:
+Use for less important or secondary actions.
+
+dart
+Copy
+Edit
+TextButton(
+  onPressed: () {},
+  child: Text("Read More"),
+)
+🟡 Example Use Case: "Forgot Password?", "Terms & Conditions".
+
+3. OutlinedButton
+Definition:
+A button with a border outline but no filled background.
+
+Use:
+Best for medium-priority actions, good for contrast on colored backgrounds.
+
+dart
+Copy
+Edit
+OutlinedButton(
+  onPressed: () {},
+  child: Text("Cancel"),
+)
+🔵 Example Use Case: Cancel, Secondary Options.
+
+4. IconButton
+Definition:
+A button that displays only an icon (no text).
+
+Use:
+Use for compact actions with recognizable icons like delete, like, search, etc.
+
+dart
+Copy
+Edit
+IconButton(
+  onPressed: () {},
+  icon: Icon(Icons.delete),
+)
+🔴 Example Use Case: Like, Delete, Share, Search.
+
+5. ElevatedButton.icon
+Definition:
+A combination of ElevatedButton with an icon.
+
+Use:
+Use when you want both text and an icon to convey the button's purpose.
+
+dart
+Copy
+Edit
+ElevatedButton.icon(
+  onPressed: () {},
+  icon: Icon(Icons.send),
+  label: Text("Send"),
+)
+🟣 Example Use Case: Send, Upload, Download.
+
+6. TextButton.icon
+Definition:
+Text button with an icon.
+
+Use:
+Lightweight action with both icon and label.
+
+dart
+Copy
+Edit
+TextButton.icon(
+  onPressed: () {},
+  icon: Icon(Icons.info),
+  label: Text("Info"),
+)
+🟠 Example Use Case: Info, Learn More, Detail.
+
+7. OutlinedButton.icon
+Definition:
+OutlinedButton with an icon.
+
+Use:
+Use when you need border-only button with extra visual indication via icon.
+
+dart
+Copy
+Edit
+OutlinedButton.icon(
+  onPressed: () {},
+  icon: Icon(Icons.share),
+  label: Text("Share"),
+)
+🟡 Example Use Case: Share, Connect, Options.
+
+8. FloatingActionButton (FAB)
+Definition:
+A circular button that floats above the UI, usually used for primary actions.
+
+Use:
+Use when the action is the most important one on the screen.
+
+dart
+Copy
+Edit
+FloatingActionButton(
+  onPressed: () {},
+  child: Icon(Icons.add),
+)
+🔵 Example Use Case: Add, Create New, Compose.
+
+9. Custom Styled Buttons
+Definition:
+You can apply your own styles (color, shape, padding) using styleFrom().
+
+Use:
+Use when you need branding, special look, or customized UI buttons.
+
+dart
+Copy
+Edit
+ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    backgroundColor: Colors.purple,
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+  ),
+  onPressed: () {},
+  child: Text("Custom Button"),
+)
+🟢 Example Use Case: Branded button, Themed UI.
+
+📝 Summary Table
+Button Type	Background	Border	Icon Support	Best Use
+ElevatedButton	✅	❌	✅	Main actions (Submit etc.)
+TextButton	❌	❌	✅	Light actions (Info etc.)
+OutlinedButton	❌	✅	✅	Secondary actions
+IconButton	❌	❌	Only Icon	Compact icon-only actions
+ElevatedButton.icon	✅	❌	✅	Visual + textual actions
+TextButton.icon	❌	❌	✅	Subtle icon + label action
+OutlinedButton.icon	❌	✅	✅	Balanced icon + label
+FloatingActionButton	✅ (circle)	❌	✅	FAB action like Add
+Custom Button	Your Style	Your Style	✅	Themed / Special actions
+
+Agar aap chaho to is pe ek interactive app UI bhi bana sakte ho — jisme ye sab buttons use hote hon in real scenarios jaise Login page, Todo app, Cart UI, etc.
+
+Batao next kya banana hai ya practice karni hai? 😊
