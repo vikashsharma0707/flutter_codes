@@ -1,0 +1,13 @@
+✅ ListView Examples Provided
+
+This file includes:
+
+✅ Simple ListView — static children.
+
+✅ ListView.builder — dynamic & performant.
+
+✅ ListView.separated — with dividers.
+
+✅ ListView.custom — advanced custom layout.
+
+✅ ListTile — ready-made list item style.

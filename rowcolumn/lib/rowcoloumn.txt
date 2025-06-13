@@ -1,0 +1,15 @@
+✅ Key Points
+Property	Meaning
+mainAxisAlignment	Row ke liye horizontal alignment; Column ke liye vertical alignment.
+crossAxisAlignment	Row ke liye vertical alignment; Column ke liye horizontal alignment.
+children	Widgets ki list jo Row/Column mein arrange hongi.
+
+✅ Common Alignment Values
+Value	What it does
+start	Start se align karo
+center	Center mein align karo
+end	End pe align karo
+spaceBetween	Widgets ke beech equal space
+spaceAround	Widgets ke beech aur edges par equal space
+spaceEvenly	Sab jagah equal space
+

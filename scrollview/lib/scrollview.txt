@@ -1,0 +1,11 @@
+✅ Important Points for SingleChildScrollView + Row
+1️⃣ Overflow Problem Solve Hota Hai
+Agar Row mein bahut saare widgets ho jaate hain, to by default Flutter overflow error deta hai.
+
+SingleChildScrollView ke saath scrollDirection: Axis.horizontal dene se horizontal scrolling allow hota hai aur overflow error nahi aata.
+
+2️⃣ Column ke liye bhi kaam karta hai
+Agar vertically overflow ho raha hai to scrollDirection: Axis.vertical use karo.
+
+Default vertical hota hai, isliye Column ke liye mostly direct SingleChildScrollView hi kaam karta hai.
+

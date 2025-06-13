@@ -1,0 +1,6 @@
+👉 Important points (Updated Best Practice)
+
+✅ 1) InkWell ko usually Material ke andar use karna chahiye — taaki ripple effect sahi se dikhe. Par simple Container par bhi kaam karta hai agar Material widget available hai.
+
+✅ 2) Ripple effect clearly dekhne ke liye color dene ki jagah Container ke andar decoration ya Material + InkWell ka combination best hai.
+

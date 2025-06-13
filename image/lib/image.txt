@@ -1,0 +1,9 @@
+✅ Important Points
+✔ assets folder ka naam same ho.
+✔ pubspec.yaml mein indentation sahi ho.
+✔ Image ka path bilkul sahi ho (case-sensitive hota hai).
+
+🗂 Most Common Widget for Images
+Image.asset('path') – local asset image ke liye.
+
+Image.network('URL') – online image ke liye.
