@@ -1,0 +1,201 @@
+📌 1️⃣ main() & MyApp
+dart
+Copy
+Edit
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: MyHomePage(),
+    );
+  }
+✅ Kaam:
+
+main() se app start hota hai.
+
+MyApp ek MaterialApp provide karta hai jisme home diya gaya hai MyHomePage().
+
+📌 2️⃣ MyHomePage (Parent Page)
+dart
+Copy
+Edit
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Custom Widget'),
+      ),
+      body: Column(
+        children: const [
+          Expanded(
+            flex: 2,
+            child: HorizontalCircles(),
+          ),
+          Expanded(
+            flex: 4,
+            child: VerticalList(),
+          ),
+          Expanded(
+            flex: 3,
+            child: GridBoxes(),
+          ),
+        ],
+      ),
+    );
+  }
+}
+✅ Kaam:
+
+Scaffold banata hai basic page structure: AppBar aur body.
+
+body mein ek Column hai jo 3 parts mein split hai:
+
+HorizontalCircles (flex: 2)
+
+VerticalList (flex: 4)
+
+GridBoxes (flex: 3)
+
+👉 Expanded ke flex se batata hai kitni space milegi.
+
+📌 3️⃣ HorizontalCircles (Top Section)
+dart
+Copy
+Edit
+class HorizontalCircles extends StatelessWidget {
+  const HorizontalCircles({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.blue,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: 10,
+        itemBuilder: (context, index) => Padding(
+          padding: const EdgeInsets.all(11.0),
+          child: SizedBox(
+            width: 100,
+            child: CircleAvatar(
+              backgroundColor: Colors.green,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+✅ Kaam:
+
+Ek horizontal ListView banata hai.
+
+CircleAvatar ko horizontally dikhata hai.
+
+Container ka color blue hai.
+
+👉 Use: App ke top mein green circles horizontally scroll hote hain.
+
+📌 4️⃣ VerticalList (Middle Section)
+dart
+Copy
+Edit
+class VerticalList extends StatelessWidget {
+  const VerticalList({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.orange,
+      child: ListView.builder(
+        itemCount: 5,
+        itemBuilder: (context, index) => ListTile(
+          leading: CircleAvatar(
+            backgroundColor: Colors.green,
+          ),
+          title: const Text("Name"),
+          subtitle: const Text("Mob No"),
+          trailing: const Icon(Icons.delete),
+        ),
+      ),
+    );
+  }
+}
+✅ Kaam:
+
+Ek vertical ListView banata hai.
+
+Har item ek ListTile hai jisme:
+
+Left mein green CircleAvatar
+
+Title: Name
+
+Subtitle: Mob No
+
+Right mein delete icon.
+
+👉 Use: Middle orange area mein contact list dikh rahi hai.
+
+📌 5️⃣ GridBoxes (Bottom Section)
+dart
+Copy
+Edit
+class GridBoxes extends StatelessWidget {
+  const GridBoxes({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.blue,
+      child: GridView.builder(
+        itemCount: 6,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3, // ek row mein 3 boxes
+          childAspectRatio: 1, // width == height
+        ),
+        itemBuilder: (context, index) => Container(
+          margin: const EdgeInsets.all(8),
+          color: Colors.green,
+        ),
+      ),
+    );
+  }
+}
+✅ Kaam:
+
+Ek GridView banata hai:
+
+3 boxes ek row mein.
+
+Har box green color ka.
+
+Blue background.
+
+👉 Use: Bottom area mein green boxes grid form mein dikhte hain.
+
+✅ Overall Kaise Kaam Kar Raha Hai?
+MyHomePage ek Column banata hai jo teen custom parts mein divided hai.
+
+Har part ko alag StatelessWidget mein split kiya gaya hai.
+
+Isse:
+
+Code clean rehta hai.
+
+Debugging easy hoti hai.
+
+UI ko manage karna simple hota hai.
+
+📌 Key point:
+Splitting ka mtlb: Bade Widget ko chhote logical Widgets mein todna.
+Ye best practice hai Flutter mein. 💪

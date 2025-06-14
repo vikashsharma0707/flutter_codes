@@ -1,0 +1,23 @@
+✅ Properties explained in Hindi
+Property	Use (Hindi)
+crossAxisCount	Row me kitne columns honge
+crossAxisSpacing	Columns ke beech ka gap
+mainAxisSpacing	Rows ke beech ka gap
+scrollDirection	Grid ko horizontal ya vertical scroll karna
+childAspectRatio	Box ka width/height ratio
+padding	Grid ke charo taraf ka space
+physics	Scrolling behavior (bouncing, smooth, etc.)
+shrinkWrap	Agar true rakha to sirf jitna zarurat hai utni height lega
+reverse	Agar true rakha to list reverse order me scroll hogi
+children	Box ya items jo grid me dikhenge
+
+⚡️ Output
+Aapko ek colorful grid dikhega jisme labels Box 1, Box 2... likhe honge.
+
+Scroll karne par bounce effect milega.
+
+Proper spacing aur padding lagegi.
+
+Responsive grid layout hoga.
+
+Aap isko copy-paste karo aur run karo — agar aur properties ya variations chahiye toh bata dena, GridView.builder ka bhi full version bana dunga! 🚀✨

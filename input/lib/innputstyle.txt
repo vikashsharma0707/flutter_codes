@@ -1,0 +1,14 @@
+✅ Most Common TextField Properties Explained
+Property	Use
+controller	Text control karne ke liye
+keyboardType	Kis type ka keyboard ho (text, number, email)
+hintText	Placeholder text
+labelText	Label above input
+helperText	Chota helper text niche
+prefixIcon	Starting icon
+suffixIcon	Ending icon (eg: eye)
+border	Default border
+enabledBorder	Normal state border
+focusedBorder	Focused state border
+disabledBorder	Disabled state border
+obscureText

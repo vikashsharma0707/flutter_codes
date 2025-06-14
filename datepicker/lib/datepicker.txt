@@ -1,0 +1,14 @@
+📌 Kya seekha is code se?
+Feature	Kaam
+showDatePicker	User se date select karvata hai
+showTimePicker	User se time select karvata hai
+DateTime? & TimeOfDay?	In variables me selected date & time store hoti hai
+setState	UI ko update karta hai jab nayi date/time select hoti hai
+format	Time ko readable banata hai jaise 10:20 AM
+
+✅ Use Karne Ka Tarika
+Pick Date button click karo → Calendar open hoga
+
+Pick Time button click karo → Clock open hoga
+
+Jo select karoge, screen pe dikh jayega

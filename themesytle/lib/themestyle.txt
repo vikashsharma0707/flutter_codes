@@ -1,0 +1,16 @@
+📌 3️⃣ Short List — Most Common
+✅ primaryColor
+✅ primarySwatch
+✅ colorScheme
+✅ brightness
+✅ textTheme
+✅ iconTheme
+✅ appBarTheme
+✅ buttonTheme (old) / TextButtonTheme (new)
+✅ floatingActionButtonTheme
+✅ cardTheme
+✅ inputDecorationTheme
+✅ bottomNavigationBarTheme
+✅ dividerColor
+✅ dialogTheme
+
