@@ -1,0 +1,4 @@
+✅ Key Points
+✔️ Padding widget se inner space milta hai
+✔️ Container ka margin se outer space milta hai
+✔️ Container ke padding se bhi inner space set ho sakta hai

@@ -1,0 +1,5 @@
+🔑 Key Points:
+✔️ ListTile = ek single row item ke liye
+✔️ ListView.builder = list ko efficiently banata hai
+✔️ ListTile ko itemBuilder ke andar return karo
+✔️ Leading, title, subtitle, trailing & onTap — sab optional aur ready-made hai

@@ -1,0 +1,6 @@
+📌 Definition:
+Expanded ek widget hai jo Row, Column, ya Flex ke andar use hota hai.
+Ye bacha hua available space occupy karta hai aur child widgets ko equally ya proportionally expand karta hai.
+
+⭐ Use Case:
+Agar tumhe Row ya Column me widgets ko flexible width/height deni ho — tab Expanded perfect hai.
