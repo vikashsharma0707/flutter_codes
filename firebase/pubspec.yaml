@@ -1,0 +1,35 @@
+name: firebase
+description: "A new Flutter project."
+
+# This line prevents the package from being accidentally published to pub.dev
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ✅ Firebase Core (Mandatory for initializing Firebase)
+  firebase_core: ^2.24.0
+
+  # ✅ Firebase Auth (if using authentication)
+  firebase_auth: ^4.15.0
+
+  # ✅ Firestore (for CRUD operations)
+  cloud_firestore: ^4.9.0
+
+  # ✅ Optional: Toast messages (useful for feedback)
+  fluttertoast: ^8.2.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

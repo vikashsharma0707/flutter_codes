@@ -1,0 +1,65 @@
+✅ 1️⃣ StatefulWidget kya hota hai?
+StatefulWidget ek aisa widget hota hai jiska UI data change ho sakta hai.
+Jaise: counter badhna, toggle hona, text update hona.
+
+✅ 2️⃣ StatefulWidget mein do cheezein hoti hain:
+Part	Kya hota hai?	Kaam kya hai?
+StatefulWidget	Immutable configuration	Ye sirf structure batata hai — kaun sa State use hoga.
+State	Mutable state & build method	Iske andar wo data hota hai jo change hota hai + build() hota hai jo UI banata hai.
+
+✅ 3️⃣ Example ka breakdown
+👉 StatefulWidget class
+dart
+Copy
+Edit
+class CounterApp extends StatefulWidget {
+  const CounterApp({super.key});
+
+  @override
+  State<CounterApp> createState() => _CounterAppState();
+}
+📌 Meaning:
+
+CounterApp ek stateful widget hai.
+
+createState() batata hai:
+→ Jab widget banega, Flutter createState() call karega.
+→ Ye CounterApp ka State banayega, jo hoga: _CounterAppState.
+
+👉 State class
+dart
+Copy
+Edit
+class _CounterAppState extends State<CounterApp> {
+  int _count = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    // Yaha aapka UI banega jo _count ko dikhayega
+    // Aur yahi dobara banega jab setState() hoga
+    return ...;
+  }
+}
+📌 Meaning:
+
+_CounterAppState woh jagah hai jahan pe:
+✅ CounterApp ka mutable data rakha jata hai (_count).
+✅ UI banane wala build() hota hai.
+✅ setState() se changes hotay hain aur UI refresh hota hai.
+
+✅ 4️⃣ Line-by-Line final explanation
+Line	Explanation
+class CounterApp extends StatefulWidget	Ye ek StatefulWidget hai jiska UI data ke hisab se change hoga.
+State<CounterApp> createState() => _CounterAppState();	Ye method batata hai: CounterApp ka state _CounterAppState handle karega.
+class _CounterAppState extends State<CounterApp>	Ye woh State class hai jo CounterApp ka data aur logic rakhegi.
+int _count = 0;	Ye mutable variable hai — iska value change ho sakta hai.
+Widget build(BuildContext context)	Ye method UI banata hai aur jab bhi data change hota hai, dobara call hota hai.
+setState(() { })	Jab bhi aap data change karoge, setState() se UI ko refresh karna hoga.
+
+✅ 5️⃣ Final summary (1 line)
+👉 _CounterAppState extends State<CounterApp> ka matlab hai:
+Ye CounterApp ke liye woh jagah hai jahan aapka change hone wala data aur UI banane ka code rakha jata hai.
+
+🚀 Ek line mein yaad raho:
+StatefulWidget → immutable hota hai.
+State class → mutable data aur build logic rakhti hai.

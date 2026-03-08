@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   print('ElevatedButton Pressed');
                 },
-                child: Text('1. ElevatedButton'),
+                child: Text('1. ElevatedButton '),
               ),
               SizedBox(height: 10),
 
@@ -117,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
               // 7. Outlined Button with Icon
               OutlinedButton.icon(
                 onPressed: () {
-                  print('Outlined Icon Button Pressed');
+                  print('Outlined Icon Button Pressed ');
                 },
                 icon: Icon(Icons.share),
                 label: Text('6. Share'),
